@@ -1,0 +1,111 @@
+<svg width="1850" height="967" viewBox="0 0 1850 967" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1850" height="967" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="947" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Document Editor -- UML Class Diagram</text>
+<path d="M153.2,228.1 Q343.2,196.9 537.2,169.4" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M528.2,170.0 L545.8,170.0 L537.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M405.5,229.7 Q468.4,200.1 535.1,168.2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M528.2,170.0 L545.8,170.0 L537.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M665.8,228.8 Q601.6,202.9 537.6,172.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M528.2,170.0 L545.8,170.0 L537.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M924.6,228.0 Q730.4,199.1 538.6,169.1" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M528.2,170.0 L545.8,170.0 L537.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1486.7,231.4 Q1539.1,196.6 1595.6,170.4" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1588.2,170.0 L1605.8,170.0 L1597.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1707.7,228.1 Q1653.5,198.9 1595.1,168.7" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1588.2,170.0 L1605.8,170.0 L1597.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1209.3,430.3 Q1211.3,319.5 1209.8,209.3" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1209.1,210.3 Q875.6,211.4 537.1,211.4" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M538.7,208.6 Q538.7,191.5 536.7,176.9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1210.0,430.0 L1223.0,417.0 L1210.0,402.0 L1197.0,417.0 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M528.2,170.0 L545.8,170.0 L537.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1208.2,655.7 Q1207.2,613.4 1211.1,572.3" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1202.8,584.0 L1210.0,572.0 L1217.2,584.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1320.7,655.3 Q1322.7,431.2 1320.3,209.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1319.9,210.6 Q1460.9,213.2 1595.4,210.7" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1598.2,209.2 Q1598.1,196.6 1596.6,176.6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1589.8,166.0 L1597.0,154.0 L1604.2,166.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<g>
+<path d="M405.5,39.9 L665.9,38.8 L665.6,154.9 L405.8,153.2 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M406.8,40.7 L666.2,39.9 L667.1,154.8 L407.6,154.7 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="537.0" y="62" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&lt;&lt;abstract&gt;&gt;</text>
+<text x="537.0" y="84" font-size="18" text-anchor="middle" fill="white">DocumentElement</text>
+<path d="M414.6,107.2 Q535.7,105.5 660.4,105.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="423" y="130" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ render(): string</text>
+</g>
+<g>
+<path d="M39.0,229.1 L264.1,230.0 L265.3,349.2 L38.4,349.7 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M39.7,230.1 L265.9,230.4 L265.0,350.2 L40.4,349.1 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="152.5" y="252" font-size="18" text-anchor="middle" fill="white">TextElement</text>
+<path d="M49.1,280.9 Q154.9,281.7 256.7,279.7" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">- text: string</text>
+<text x="56" y="326" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ render(): string</text>
+</g>
+<g>
+<path d="M283.7,230.4 L528.6,228.6 L529.1,348.9 L284.5,348.6 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M284.0,229.3 L529.2,229.7 L529.1,350.7 L285.2,349.3 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="407.5" y="252" font-size="18" text-anchor="middle" fill="white">ImageElement</text>
+<path d="M292.6,278.9 Q406.0,279.1 523.0,281.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="301" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">- imagePath: string</text>
+<text x="301" y="326" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ render(): string</text>
+</g>
+<g>
+<path d="M549.9,229.9 L783.7,228.7 L784.5,327.2 L551.1,326.9 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M549.0,230.9 L785.1,229.3 L785.1,327.1 L550.1,329.0 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="667.5" y="252" font-size="18" text-anchor="middle" fill="white">NewLineElement</text>
+<path d="M557.3,279.6 Q669.7,281.2 776.0,280.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="566" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ render(): string</text>
+</g>
+<g>
+<path d="M805.1,230.9 L1039.5,229.1 L1041.0,329.6 L806.1,329.0 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M805.6,230.5 L1039.5,230.0 L1039.7,327.1 L804.1,327.6 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="922.5" y="252" font-size="18" text-anchor="middle" fill="white">TabSpaceElement</text>
+<path d="M814.4,279.8 Q921.1,281.2 1033.3,281.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="821" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ render(): string</text>
+</g>
+<g>
+<path d="M1488.5,39.6 L1706.1,39.1 L1706.0,153.1 L1487.4,155.3 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1487.7,40.0 L1707.3,40.6 L1706.2,154.3 L1487.8,154.6 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1597.0" y="62" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&lt;&lt;abstract&gt;&gt;</text>
+<text x="1597.0" y="84" font-size="18" text-anchor="middle" fill="white">Persistence</text>
+<path d="M1494.0,106.9 Q1598.5,105.9 1698.5,106.9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1503" y="130" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ save(data)</text>
+</g>
+<g>
+<path d="M1386.5,229.7 L1589.7,231.4 L1590.7,326.9 L1383.8,326.9 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1385.8,230.6 L1589.3,230.7 L1591.0,328.3 L1384.7,328.1 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1487.5" y="252" font-size="18" text-anchor="middle" fill="white">FileStorage</text>
+<path d="M1394.4,280.4 Q1485.3,277.1 1582.1,281.3" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1401" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ save(data)</text>
+</g>
+<g>
+<path d="M1604.8,231.2 L1811.0,229.1 L1809.2,327.3 L1604.2,328.3 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1604.5,229.8 L1809.3,230.8 L1809.7,327.9 L1605.2,328.8 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1707.5" y="252" font-size="18" text-anchor="middle" fill="white">DBStorage</text>
+<path d="M1613.0,280.1 Q1707.0,282.5 1802.1,278.6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1621" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ save(data)</text>
+</g>
+<g>
+<path d="M1049.8,429.0 L1368.4,431.0 L1369.0,571.9 L1050.7,572.2 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1049.7,430.0 L1370.1,430.6 L1369.2,572.1 L1049.5,571.6 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1210.0" y="452" font-size="18" text-anchor="middle" fill="white">Document</text>
+<path d="M1058.2,480.8 Q1211.6,480.0 1363.2,479.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1066" y="504" font-size="14" text-anchor="start" fill="white" opacity="0.9">- elements: vector&lt;Element*&gt;</text>
+<text x="1066" y="526" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ addElement()</text>
+<text x="1066" y="548" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ render()</text>
+</g>
+<g>
+<path d="M1070.4,655.0 L1350.0,655.6 L1349.8,907.1 L1069.9,908.4 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1070.4,655.8 L1350.9,654.5 L1350.1,907.9 L1070.7,906.3 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1210.0" y="677" font-size="18" text-anchor="middle" fill="white">DocumentEditor</text>
+<path d="M1076.7,704.2 Q1207.7,704.7 1340.7,705.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1086" y="729" font-size="14" text-anchor="start" fill="white" opacity="0.9">- document: Document*</text>
+<text x="1086" y="751" font-size="14" text-anchor="start" fill="white" opacity="0.9">- storage: Persistence*</text>
+<text x="1086" y="773" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ addText()</text>
+<text x="1086" y="795" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ addImage()</text>
+<text x="1086" y="817" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ addNewLine()</text>
+<text x="1086" y="839" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ addTabSpace()</text>
+<text x="1086" y="861" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ renderDocument()</text>
+<text x="1086" y="883" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ saveDocument()</text>
+</g>
+</svg>
