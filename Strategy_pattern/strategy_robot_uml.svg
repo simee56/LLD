@@ -1,0 +1,133 @@
+<svg width="1385" height="891" viewBox="0 0 1385 891" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1385" height="891" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="871" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Robot Strategy Pattern -- UML Class Diagram</text>
+<path d="M136.9,229.8 Q188.1,200.5 242.0,170.4" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M233.2,170.0 L250.8,170.0 L242.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M350.6,231.3 Q293.2,200.1 240.2,169.1" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M233.2,170.0 L250.8,170.0 L242.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M580.9,228.0 Q629.9,202.7 689.1,172.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M678.2,170.0 L695.8,170.0 L687.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M793.5,227.9 Q742.4,201.0 687.1,168.1" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M678.2,170.0 L695.8,170.0 L687.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1022.9,229.8 Q1075.8,197.7 1131.7,171.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1123.2,170.0 L1140.8,170.0 L1132.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M1240.0,230.7 Q1186.2,201.2 1131.8,169.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1123.2,170.0 L1140.8,170.0 L1132.0,154.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M596.5,733.9 Q645.4,710.9 686.2,678.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M678.2,680.0 L695.8,680.0 L687.0,664.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M831.2,732.6 Q756.6,702.7 688.5,679.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M678.2,680.0 L695.8,680.0 L687.0,664.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M570.2,417.0 Q575.3,386.5 573.5,349.9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M570.5,350.5 Q517.0,349.3 456.0,349.2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M456.7,350.9 Q452.0,278.8 453.6,209.1" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M456.1,208.8 Q345.6,206.8 242.2,209.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M240.7,210.5 Q239.8,183.7 240.6,153.7" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M572.0,418.0 L585.0,405.0 L572.0,390.0 L559.0,405.0 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M688.7,419.1 Q684.9,382.3 686.3,351.4" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M688.3,350.5 Q786.4,349.2 888.6,351.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M891.0,349.4 Q887.9,278.3 889.3,208.5" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M889.1,210.4 Q785.5,210.6 686.5,209.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M687.3,211.3 Q690.3,181.9 685.9,152.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M687.0,418.0 L700.0,405.0 L687.0,390.0 L674.0,405.0 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path d="M801.1,416.9 Q804.9,386.3 802.9,351.6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M803.4,350.4 Q853.8,353.2 909.7,348.6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M909.1,350.7 Q906.7,283.3 909.1,211.2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M908.8,210.8 Q1021.7,208.5 1130.4,209.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1132.4,209.2 Q1132.4,184.5 1133.5,152.9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M802.0,418.0 L815.0,405.0 L802.0,390.0 L789.0,405.0 Z" fill="white" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<g>
+<path d="M38.5,229.3 L229.8,228.6 L229.0,327.6 L40.2,326.8 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M39.7,230.8 L231.0,230.3 L230.4,328.2 L39.3,327.1 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="135.0" y="252" font-size="18" text-anchor="middle" fill="white">NormalWalk</text>
+<path d="M48.6,281.4 Q132.1,282.5 220.6,280.4" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="56" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ walk()</text>
+</g>
+<g>
+<path d="M254.9,230.7 L444.4,231.6 L443.6,328.1 L255.8,329.3 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M255.5,230.4 L445.6,230.8 L444.7,328.4 L255.8,328.7 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="350.0" y="252" font-size="18" text-anchor="middle" fill="white">NoWalk</text>
+<path d="M264.1,280.2 Q349.5,281.7 437.4,279.6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="271" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ walk()</text>
+</g>
+<g>
+<path d="M122.3,40.3 L360.7,40.4 L363.6,155.2 L122.7,153.6 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M122.5,40.2 L361.9,40.7 L361.2,154.5 L121.1,154.2 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="242.0" y="62" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&lt;&lt;abstract&gt;&gt;</text>
+<text x="242.0" y="84" font-size="18" text-anchor="middle" fill="white">WalkableRobot</text>
+<path d="M130.6,106.0 Q241.9,104.4 354.3,107.3" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="138" y="130" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ walk()</text>
+</g>
+<g>
+<path d="M484.2,228.4 L674.4,230.6 L674.0,326.9 L486.3,328.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M484.9,230.8 L674.7,230.3 L674.4,327.9 L485.6,328.8 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="580.0" y="252" font-size="18" text-anchor="middle" fill="white">NormalTalk</text>
+<path d="M493.2,279.4 Q582.3,279.3 665.9,280.0" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="501" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ talk()</text>
+</g>
+<g>
+<path d="M701.1,231.1 L890.7,231.4 L889.3,326.9 L699.8,327.3 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M699.4,229.8 L890.3,230.0 L889.6,328.7 L701.0,327.9 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="795.0" y="252" font-size="18" text-anchor="middle" fill="white">NoTalk</text>
+<path d="M709.1,278.6 Q792.4,277.2 882.6,280.2" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="716" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ talk()</text>
+</g>
+<g>
+<path d="M566.4,40.9 L805.5,38.8 L806.9,152.5 L568.1,153.2 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M566.3,39.1 L807.3,39.9 L807.3,154.3 L567.6,154.9 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="687.0" y="62" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&lt;&lt;abstract&gt;&gt;</text>
+<text x="687.0" y="84" font-size="18" text-anchor="middle" fill="white">TalkableRobot</text>
+<path d="M574.9,105.0 Q688.1,104.2 797.5,105.9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="583" y="130" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ talk()</text>
+</g>
+<g>
+<path d="M930.7,229.0 L1119.3,229.5 L1120.6,328.1 L930.4,328.8 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M929.8,230.6 L1120.8,229.2 L1120.9,328.4 L929.3,327.9 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1025.0" y="252" font-size="18" text-anchor="middle" fill="white">NormalFly</text>
+<path d="M937.6,280.2 Q1025.8,282.5 1113.1,280.9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="946" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ fly()</text>
+</g>
+<g>
+<path d="M1146.4,229.9 L1335.5,229.1 L1335.7,329.0 L1145.5,328.7 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1144.4,230.8 L1336.0,231.0 L1335.1,328.6 L1144.6,328.8 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1240.0" y="252" font-size="18" text-anchor="middle" fill="white">NoFly</text>
+<path d="M1151.7,279.8 Q1242.1,279.1 1327.2,280.8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1161" y="304" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ fly()</text>
+</g>
+<g>
+<path d="M1012.0,38.5 L1253.0,38.6 L1253.0,153.0 L1011.5,154.9 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1011.3,39.3 L1252.0,40.4 L1252.7,154.4 L1012.9,154.0 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1132.0" y="62" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&lt;&lt;abstract&gt;&gt;</text>
+<text x="1132.0" y="84" font-size="18" text-anchor="middle" fill="white">FlyableRobot</text>
+<path d="M1019.2,106.1 Q1134.7,103.5 1243.4,106.7" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1028" y="130" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ fly()</text>
+</g>
+<g>
+<path d="M517.4,418.1 L858.1,418.2 L856.4,663.6 L518.1,665.3 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M516.4,418.7 L857.9,418.0 L857.1,663.4 L517.1,664.0 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="687.0" y="440" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&lt;&lt;abstract&gt;&gt;</text>
+<text x="687.0" y="462" font-size="18" text-anchor="middle" fill="white">Robot</text>
+<path d="M526.4,484.0 Q687.6,481.2 848.7,484.9" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="533" y="508" font-size="14" text-anchor="start" fill="white" opacity="0.9">- walkBehavior: WalkableRobot*</text>
+<text x="533" y="530" font-size="14" text-anchor="start" fill="white" opacity="0.9">- talkBehavior: TalkableRobot*</text>
+<text x="533" y="552" font-size="14" text-anchor="start" fill="white" opacity="0.9">- flyBehavior: FlyableRobot*</text>
+<text x="533" y="574" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ walk()</text>
+<text x="533" y="596" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ talk()</text>
+<text x="533" y="618" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ fly()</text>
+<text x="533" y="640" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ projection()</text>
+</g>
+<g>
+<path d="M495.2,733.0 L695.6,731.6 L695.1,830.7 L496.5,832.4 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M494.5,732.9 L694.3,732.9 L695.6,831.8 L495.0,830.6 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="595.0" y="755" font-size="18" text-anchor="middle" fill="white">CompanionRobot</text>
+<path d="M504.3,781.9 Q593.1,783.7 687.8,781.6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="511" y="807" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ projection()</text>
+</g>
+<g>
+<path d="M729.0,732.1 L930.6,732.4 L929.5,831.4 L728.7,831.7 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M729.2,733.0 L929.5,732.4 L930.1,830.9 L729.8,830.8 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="830.0" y="755" font-size="18" text-anchor="middle" fill="white">WorkerRobot</text>
+<path d="M737.1,783.4 Q830.2,781.0 922.4,783.1" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="746" y="807" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ projection()</text>
+</g>
+</svg>
