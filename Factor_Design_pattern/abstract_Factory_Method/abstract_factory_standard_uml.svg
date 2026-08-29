@@ -1,0 +1,120 @@
+<svg width="1500" height="900" viewBox="0 0 1500 900" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1500" height="900" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="880" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Abstract Factory Pattern -- Standard UML Class Diagram</text>
+
+<!-- Inheritance: ConcreteProductA1 / A2 -> AbstractProductA -->
+<path d="M230,280 Q255,235 278,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M270.9,191.0 L288.1,193.3 L282.0,176.3 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M570,280 Q470,235 390,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M394.5,175.7 L389.9,192.9 L406.9,189.7 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Inheritance: ConcreteProductB1 / B2 -> AbstractProductB -->
+<path d="M970,280 Q985,235 998,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M990.9,191.0 L1008.1,193.3 L1002.0,176.3 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M1310,280 Q1230,235 1150,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1154.5,175.7 L1149.9,192.9 L1166.9,189.7 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Inheritance: ConcreteFactory1 / 2 -> AbstractFactory -->
+<path d="M360,740 Q510,700 640,655" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M633.2,652.4 L650.6,652.9 L642.9,636.3 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M1140,740 Q990,700 858,655" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M857.4,636.4 L849.7,652.9 L867.1,652.5 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- AbstractProductA -->
+<g>
+<path d="M160,50 L500,50 L500,190 L160,190 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M161.5,51.5 L501.5,51 L501,191 L159,190.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="330" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="330" y="96" font-size="20" text-anchor="middle" fill="white">AbstractProductA</text>
+<path d="M172,118 Q330,116 488,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="180" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ operationA() = 0</text>
+<text x="180" y="167" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">Product family A</text>
+</g>
+
+<!-- AbstractProductB -->
+<g>
+<path d="M900,50 L1240,50 L1240,190 L900,190 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M901.5,51.5 L1241.5,51 L1241,191 L899,190.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1070" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="1070" y="96" font-size="20" text-anchor="middle" fill="white">AbstractProductB</text>
+<path d="M912,118 Q1070,116 1228,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="920" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ operationB() = 0</text>
+<text x="920" y="167" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">Product family B</text>
+</g>
+
+<!-- ConcreteProductA1 -->
+<g>
+<path d="M100,280 L360,280 L360,390 L100,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M101.5,281.5 L361.5,281 L361,391 L99,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="230" y="315" font-size="17" text-anchor="middle" fill="white">ConcreteProductA1</text>
+<path d="M110,336 Q230,334 350,337" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="118" y="362" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operationA()</text>
+</g>
+
+<!-- ConcreteProductA2 -->
+<g>
+<path d="M440,280 L700,280 L700,390 L440,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,281.5 L701.5,281 L701,391 L439,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="570" y="315" font-size="17" text-anchor="middle" fill="white">ConcreteProductA2</text>
+<path d="M450,336 Q570,334 690,337" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="458" y="362" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operationA()</text>
+</g>
+
+<!-- ConcreteProductB1 -->
+<g>
+<path d="M840,280 L1100,280 L1100,390 L840,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M841.5,281.5 L1101.5,281 L1101,391 L839,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="970" y="315" font-size="17" text-anchor="middle" fill="white">ConcreteProductB1</text>
+<path d="M850,336 Q970,334 1090,337" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="858" y="362" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operationB()</text>
+</g>
+
+<!-- ConcreteProductB2 -->
+<g>
+<path d="M1180,280 L1440,280 L1440,390 L1180,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1181.5,281.5 L1441.5,281 L1441,391 L1179,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1310" y="315" font-size="17" text-anchor="middle" fill="white">ConcreteProductB2</text>
+<path d="M1190,336 Q1310,334 1430,337" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1198" y="362" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operationB()</text>
+</g>
+
+<!-- AbstractFactory -->
+<g>
+<path d="M580,480 L920,480 L920,650 L580,650 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M581.5,481.5 L921.5,481 L921,651 L579,650.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="750" y="502" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract factory&#187;</text>
+<text x="750" y="526" font-size="20" text-anchor="middle" fill="white">AbstractFactory</text>
+<path d="M592,548 Q750,546 908,549" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="600" y="574" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ createProductA()</text>
+<text x="600" y="595" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;: AbstractProductA = 0</text>
+<text x="600" y="618" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ createProductB()</text>
+<text x="600" y="639" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;: AbstractProductB = 0</text>
+</g>
+
+<!-- ConcreteFactory1 -->
+<g>
+<path d="M200,740 L520,740 L520,860 L200,860 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M201.5,741.5 L521.5,741 L521,861 L199,860.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="360" y="770" font-size="18" text-anchor="middle" fill="white">ConcreteFactory1</text>
+<path d="M210,790 Q360,788 510,791" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="218" y="814" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createProductA(): ProductA1</text>
+<text x="218" y="833" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createProductB(): ProductB1</text>
+<text x="218" y="852" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">returns family 1 (A1 + B1)</text>
+</g>
+
+<!-- ConcreteFactory2 -->
+<g>
+<path d="M980,740 L1300,740 L1300,860 L980,860 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M981.5,741.5 L1301.5,741 L1301,861 L979,860.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1140" y="770" font-size="18" text-anchor="middle" fill="white">ConcreteFactory2</text>
+<path d="M990,790 Q1140,788 1290,791" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="998" y="814" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createProductA(): ProductA2</text>
+<text x="998" y="833" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createProductB(): ProductB2</text>
+<text x="998" y="852" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">returns family 2 (A2 + B2)</text>
+</g>
+
+</svg>

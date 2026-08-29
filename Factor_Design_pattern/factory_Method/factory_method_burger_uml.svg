@@ -1,0 +1,122 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1400" height="900" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="880" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Factory Method Pattern (from code) -- UML Class Diagram</text>
+
+<!-- Inheritance: 6 concrete burgers -> Burger -->
+<path d="M140,300 Q350,410 558,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M550.9,236.3 L568.1,238.4 L562.0,221.4 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M360,300 Q490,330 606,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M599.1,236.7 L616.1,239.6 L610.9,222.4 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M580,300 Q615,270 654,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M647.1,236.8 L664.1,239.4 L659.0,222.3 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M800,300 Q760,270 706,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M695.9,222.6 L690.9,239.7 L707.9,237.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M1020,300 Q890,330 754,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M743.9,221.6 L738.8,238.7 L755.8,236.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M1240,300 Q1010,410 802,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M791.9,221.7 L786.9,238.9 L803.9,236.2 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Inheritance: SinghBurger / KingBurger -> BurgerFactory -->
+<path d="M340,730 Q460,680 596,632" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M589.5,629.6 L606.9,629.9 L599.3,613.4 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M1060,730 Q930,680 794,632" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M793.1,613.5 L785.4,629.9 L802.8,629.7 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Burger (abstract) -->
+<g>
+<path d="M540,50 L860,50 L860,220 L540,220 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M541.5,51.5 L861.5,51 L861,221 L539,220.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="700" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="700" y="96" font-size="20" text-anchor="middle" fill="white">Burger</text>
+<path d="M552,118 Q700,116 848,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="560" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ prepare() = 0</text>
+<text x="560" y="170" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ ~Burger()</text>
+<text x="560" y="195" font-size="13" text-anchor="start" fill="white" opacity="0.6" font-style="italic">Product interface</text>
+</g>
+
+<!-- Concrete burgers: classic line -->
+<g>
+<path d="M40,300 L240,300 L240,410 L40,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M41.5,301.5 L241.5,301 L241,411 L39,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="140" y="330" font-size="15" text-anchor="middle" fill="white">BasicBurger</text>
+<path d="M50,350 Q140,348 230,351" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="58" y="376" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+<g>
+<path d="M260,300 L460,300 L460,410 L260,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M261.5,301.5 L461.5,301 L461,411 L259,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="360" y="330" font-size="15" text-anchor="middle" fill="white">StandardBurger</text>
+<path d="M270,350 Q360,348 450,351" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="278" y="376" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+<g>
+<path d="M480,300 L680,300 L680,410 L480,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M481.5,301.5 L681.5,301 L681,411 L479,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="580" y="330" font-size="15" text-anchor="middle" fill="white">PremiumBurger</text>
+<path d="M490,350 Q580,348 670,351" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="498" y="376" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+
+<!-- Concrete burgers: wheat line -->
+<g>
+<path d="M700,300 L920,300 L920,410 L700,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M701.5,301.5 L921.5,301 L921,411 L699,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="810" y="330" font-size="14" text-anchor="middle" fill="white">BasicWheatBurger</text>
+<path d="M710,350 Q810,348 910,351" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="718" y="376" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+<g>
+<path d="M940,300 L1160,300 L1160,410 L940,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M941.5,301.5 L1161.5,301 L1161,411 L939,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1050" y="330" font-size="14" text-anchor="middle" fill="white">StandardWheatBurger</text>
+<path d="M950,350 Q1050,348 1150,351" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="958" y="376" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+<g>
+<path d="M1180,300 L1400,300 L1400,410 L1180,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1181.5,301.5 L1401.5,301 L1401,411 L1179,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1290" y="330" font-size="14" text-anchor="middle" fill="white">PremiumWheatBurger</text>
+<path d="M1190,350 Q1290,348 1390,351" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1198" y="376" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+
+<!-- BurgerFactory (abstract creator) -->
+<g>
+<path d="M540,480 L860,480 L860,630 L540,630 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M541.5,481.5 L861.5,481 L861,631 L539,630.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="700" y="502" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="700" y="526" font-size="20" text-anchor="middle" fill="white">BurgerFactory</text>
+<path d="M552,548 Q700,546 848,549" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="560" y="575" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ createBurger(type)</text>
+<text x="560" y="597" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;: Burger* = 0</text>
+<text x="560" y="618" font-size="13" text-anchor="start" fill="white" opacity="0.6" font-style="italic">Creator / factory method</text>
+</g>
+
+<!-- SinghBurger -->
+<g>
+<path d="M200,730 L480,730 L480,840 L200,840 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M201.5,731.5 L481.5,731 L481,841 L199,840.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="340" y="760" font-size="18" text-anchor="middle" fill="white">SinghBurger</text>
+<path d="M210,780 Q340,778 470,781" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="218" y="805" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createBurger(type): Burger*</text>
+<text x="218" y="826" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">creates: Basic/Standard/PremiumBurger</text>
+</g>
+
+<!-- KingBurger -->
+<g>
+<path d="M920,730 L1200,730 L1200,840 L920,840 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M921.5,731.5 L1201.5,731 L1201,841 L919,840.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1060" y="760" font-size="18" text-anchor="middle" fill="white">KingBurger</text>
+<path d="M930,780 Q1060,778 1190,781" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="938" y="805" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createBurger(type): Burger*</text>
+<text x="938" y="826" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">creates: Basic/Standard/PremiumWheatBurger</text>
+</g>
+
+</svg>

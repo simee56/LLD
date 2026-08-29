@@ -1,0 +1,83 @@
+<svg width="1250" height="700" viewBox="0 0 1250 700" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1250" height="700" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="680" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Simple Factory Pattern -- Standard UML Class Diagram</text>
+
+<!-- Inheritance connectors: concrete products -> Product (closed triangle) -->
+<path d="M325,300 Q460,265 597,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M591.2,236.0 L608.8,236.0 L600.0,220.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M625,300 L625,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M616.2,236.0 L633.8,236.0 L625.0,220.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M925,300 Q790,265 653,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M641.2,236.0 L658.8,236.0 L650.0,220.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Dependency: SimpleFactory ..creates..> Product (dashed, open arrowhead) -->
+<path d="M850,135 L764,135" fill="none" stroke="white" stroke-width="2" stroke-dasharray="7,6" stroke-linecap="round"/>
+<path d="M760,135 L774,129 M760,135 L774,141" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="805" y="122" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;creates&#187;</text>
+
+<!-- Product (abstract) -->
+<g>
+<path d="M440,50 L760,50 L760,220 L440,220 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,51.5 L761.5,51 L761,221 L439,220.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="600" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="600" y="96" font-size="20" text-anchor="middle" fill="white">Product</text>
+<path d="M452,118 Q600,116 748,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ operation() = 0</text>
+<text x="460" y="170" font-size="13" text-anchor="start" fill="white" opacity="0.6" font-style="italic">common product interface</text>
+</g>
+
+<!-- SimpleFactory -->
+<g>
+<path d="M850,50 L1170,50 L1170,220 L850,220 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M851.5,51.5 L1171.5,51 L1171,221 L849,220.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1010" y="96" font-size="20" text-anchor="middle" fill="white">SimpleFactory</text>
+<path d="M862,118 Q1010,116 1158,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="870" y="145" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ createProduct(</text>
+<text x="870" y="167" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;type: string)</text>
+<text x="870" y="192" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;: Product</text>
+</g>
+
+<!-- ConcreteProductA -->
+<g>
+<path d="M195,300 L455,300 L455,410 L195,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M196.5,301.5 L456.5,301 L456,411 L194,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="325" y="332" font-size="17" text-anchor="middle" fill="white">ConcreteProductA</text>
+<path d="M205,352 Q325,350 445,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="213" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operation()</text>
+</g>
+
+<!-- ConcreteProductB -->
+<g>
+<path d="M495,300 L755,300 L755,410 L495,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M496.5,301.5 L756.5,301 L756,411 L494,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="625" y="332" font-size="17" text-anchor="middle" fill="white">ConcreteProductB</text>
+<path d="M505,352 Q625,350 745,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="513" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operation()</text>
+</g>
+
+<!-- ConcreteProductC -->
+<g>
+<path d="M795,300 L1055,300 L1055,410 L795,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M796.5,301.5 L1056.5,301 L1056,411 L794,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="925" y="332" font-size="17" text-anchor="middle" fill="white">ConcreteProductC</text>
+<path d="M805,352 Q925,350 1045,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="813" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operation()</text>
+</g>
+
+<!-- Client -->
+<g>
+<path d="M440,480 L810,480 L810,600 L440,600 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,481.5 L811.5,481 L811,601 L439,600.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="625" y="512" font-size="18" text-anchor="middle" fill="white">Client</text>
+<path d="M452,534 Q625,532 798,535" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="559" font-size="14" text-anchor="start" fill="white" opacity="0.9">factory.createProduct(type)</text>
+<text x="460" y="581" font-size="14" text-anchor="start" fill="white" opacity="0.9">product.operation()</text>
+</g>
+<path d="M625,480 L625,412" fill="none" stroke="white" stroke-width="2" stroke-dasharray="7,6" stroke-linecap="round"/>
+<path d="M625,410 L619,422 M625,410 L631,422" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="655" y="450" font-size="13" text-anchor="start" fill="white" opacity="0.75" font-style="italic">&#171;uses&#187;</text>
+
+</svg>

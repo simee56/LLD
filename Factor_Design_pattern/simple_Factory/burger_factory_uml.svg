@@ -1,0 +1,84 @@
+<svg width="1250" height="700" viewBox="0 0 1250 700" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1250" height="700" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="680" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Burger Factory (from code) -- UML Class Diagram</text>
+
+<!-- Inheritance connectors: concrete burgers -> Burger (closed triangle, black fill / white stroke) -->
+<path d="M220,300 Q360,265 497,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M491.2,236.0 L508.8,236.0 L500.0,220.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M600,300 L600,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M591.2,236.0 L608.8,236.0 L600.0,220.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M980,300 Q840,265 703,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M691.2,236.0 L708.8,236.0 L700.0,220.0 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Dependency: BurgerFactory ..creates..> Burger (dashed, open arrowhead) -->
+<path d="M850,135 L764,135" fill="none" stroke="white" stroke-width="2" stroke-dasharray="7,6" stroke-linecap="round"/>
+<path d="M760,135 L774,129 M760,135 L774,141" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="805" y="122" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;creates&#187;</text>
+
+<!-- Burger (abstract) -->
+<g>
+<path d="M440,50 L760,50 L760,220 L440,220 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,51.5 L761.5,51 L761,221 L439,220.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="600" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="600" y="96" font-size="20" text-anchor="middle" fill="white">Burger</text>
+<path d="M452,118 Q600,116 748,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ prepare() = 0</text>
+<text x="460" y="170" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ ~Burger()</text>
+<text x="460" y="195" font-size="13" text-anchor="start" fill="white" opacity="0.6" font-style="italic">pure virtual, virtual dtor</text>
+</g>
+
+<!-- BurgerFactory -->
+<g>
+<path d="M850,50 L1170,50 L1170,220 L850,220 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M851.5,51.5 L1171.5,51 L1171,221 L849,220.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1010" y="96" font-size="20" text-anchor="middle" fill="white">BurgerFactory</text>
+<path d="M862,118 Q1010,116 1158,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="870" y="145" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ createBurger(</text>
+<text x="870" y="167" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;type: string&amp;)</text>
+<text x="870" y="192" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;: Burger*</text>
+</g>
+
+<!-- BasicBurger -->
+<g>
+<path d="M90,300 L350,300 L350,410 L90,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M91.5,301.5 L351.5,301 L351,411 L89,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="220" y="332" font-size="18" text-anchor="middle" fill="white">BasicBurger</text>
+<path d="M100,352 Q220,350 340,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="108" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+
+<!-- StandardBurger -->
+<g>
+<path d="M470,300 L730,300 L730,410 L470,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M471.5,301.5 L731.5,301 L731,411 L469,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="600" y="332" font-size="18" text-anchor="middle" fill="white">StandardBurger</text>
+<path d="M480,352 Q600,350 720,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="488" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+
+<!-- PremiumBurger -->
+<g>
+<path d="M850,300 L1110,300 L1110,410 L850,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M851.5,301.5 L1111.5,301 L1111,411 L849,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="980" y="332" font-size="18" text-anchor="middle" fill="white">PremiumBurger</text>
+<path d="M860,352 Q980,350 1100,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="868" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ prepare()</text>
+</g>
+
+<!-- main() client note -->
+<g>
+<path d="M440,480 L810,480 L810,600 L440,600 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,481.5 L811.5,481 L811,601 L439,600.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="625" y="512" font-size="18" text-anchor="middle" fill="white">main()</text>
+<path d="M452,534 Q625,532 798,535" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="559" font-size="14" text-anchor="start" fill="white" opacity="0.9">factory.createBurger(type)</text>
+<text x="460" y="581" font-size="14" text-anchor="start" fill="white" opacity="0.9">burger-&gt;prepare()</text>
+</g>
+<path d="M625,480 L625,412" fill="none" stroke="white" stroke-width="2" stroke-dasharray="7,6" stroke-linecap="round"/>
+<path d="M625,410 L619,422 M625,410 L631,422" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="655" y="450" font-size="13" text-anchor="start" fill="white" opacity="0.75" font-style="italic">&#171;uses&#187;</text>
+
+</svg>

@@ -1,0 +1,91 @@
+<svg width="1250" height="850" viewBox="0 0 1250 850" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1250" height="850" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="830" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Factory Method Pattern -- Standard UML Class Diagram</text>
+
+<!-- Inheritance: ConcreteProducts -> Product -->
+<path d="M325,300 Q450,265 558,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M551.2,236.3 L568.4,238.6 L562.3,221.6 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M925,300 Q810,265 703,238" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M709.7,221.5 L703.6,238.5 L720.8,236.2 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Inheritance: ConcreteCreators -> Creator -->
+<path d="M240,690 Q420,665 598,642" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M591.1,639.9 L608.5,639.9 L600.6,623.5 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M990,690 Q820,665 702,642" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M699.4,623.5 L691.5,639.9 L708.9,639.9 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Dependency: ConcreteCreatorA ..creates..> ConcreteProductA -->
+<path d="M170,690 Q195,550 220,414" fill="none" stroke="white" stroke-width="2" stroke-dasharray="7,6" stroke-linecap="round"/>
+<path d="M221,410 L212,424 M221,410 L229,422" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="95" y="555" font-size="13" text-anchor="start" fill="white" opacity="0.75" font-style="italic" transform="rotate(-84 95 555)">&#171;creates&#187;</text>
+
+<!-- Dependency: ConcreteCreatorB ..creates..> ConcreteProductB -->
+<path d="M1060,690 Q1035,550 1010,414" fill="none" stroke="white" stroke-width="2" stroke-dasharray="7,6" stroke-linecap="round"/>
+<path d="M1009,410 L1000,422 M1009,410 L1018,424" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1085" y="555" font-size="13" text-anchor="start" fill="white" opacity="0.75" font-style="italic" transform="rotate(84 1085 555)">&#171;creates&#187;</text>
+
+<!-- Product (abstract) -->
+<g>
+<path d="M440,50 L760,50 L760,220 L440,220 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,51.5 L761.5,51 L761,221 L439,220.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="600" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="600" y="96" font-size="20" text-anchor="middle" fill="white">Product</text>
+<path d="M452,118 Q600,116 748,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ operation() = 0</text>
+<text x="460" y="170" font-size="13" text-anchor="start" fill="white" opacity="0.6" font-style="italic">common product interface</text>
+</g>
+
+<!-- ConcreteProductA -->
+<g>
+<path d="M195,300 L455,300 L455,410 L195,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M196.5,301.5 L456.5,301 L456,411 L194,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="325" y="332" font-size="17" text-anchor="middle" fill="white">ConcreteProductA</text>
+<path d="M205,352 Q325,350 445,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="213" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operation()</text>
+</g>
+
+<!-- ConcreteProductB -->
+<g>
+<path d="M795,300 L1055,300 L1055,410 L795,410 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M796.5,301.5 L1056.5,301 L1056,411 L794,410.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="925" y="332" font-size="17" text-anchor="middle" fill="white">ConcreteProductB</text>
+<path d="M805,352 Q925,350 1045,353" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="813" y="378" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operation()</text>
+</g>
+
+<!-- Creator (abstract) -->
+<g>
+<path d="M440,480 L760,480 L760,640 L440,640 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,481.5 L761.5,481 L761,641 L439,640.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="600" y="502" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="600" y="526" font-size="20" text-anchor="middle" fill="white">Creator</text>
+<path d="M452,548 Q600,546 748,549" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="460" y="574" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ factoryMethod(): Product = 0</text>
+<text x="460" y="596" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ operation()</text>
+<text x="460" y="618" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">operation() calls factoryMethod()</text>
+</g>
+
+<!-- ConcreteCreatorA -->
+<g>
+<path d="M100,690 L380,690 L380,800 L100,800 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M101.5,691.5 L381.5,691 L381,801 L99,800.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="240" y="722" font-size="17" text-anchor="middle" fill="white">ConcreteCreatorA</text>
+<path d="M110,742 Q240,740 370,743" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="118" y="768" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ factoryMethod(): Product</text>
+<text x="118" y="789" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">returns ConcreteProductA</text>
+</g>
+
+<!-- ConcreteCreatorB -->
+<g>
+<path d="M850,690 L1130,690 L1130,800 L850,800 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M851.5,691.5 L1131.5,691 L1131,801 L849,800.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="990" y="722" font-size="17" text-anchor="middle" fill="white">ConcreteCreatorB</text>
+<path d="M860,742 Q990,740 1120,743" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="868" y="768" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ factoryMethod(): Product</text>
+<text x="868" y="789" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">returns ConcreteProductB</text>
+</g>
+
+</svg>

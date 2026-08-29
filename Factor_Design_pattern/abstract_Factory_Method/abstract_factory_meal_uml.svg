@@ -1,0 +1,124 @@
+<svg width="1500" height="900" viewBox="0 0 1500 900" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1500" height="900" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="880" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Abstract Factory Pattern (from code) -- UML Class Diagram</text>
+
+<!-- Inheritance: SinghBurgers / KingBurgers -> Burger -->
+<path d="M230,280 Q255,235 278,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M270.9,191.0 L288.1,193.3 L282.0,176.3 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M570,280 Q470,235 390,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M394.5,175.7 L389.9,192.9 L406.9,189.7 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Inheritance: SinghGarlicBreads / KingGarlicBreads -> GarlicBread -->
+<path d="M970,280 Q985,235 998,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M990.9,191.0 L1008.1,193.3 L1002.0,176.3 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M1310,280 Q1230,235 1150,192" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1154.5,175.7 L1149.9,192.9 L1166.9,189.7 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Inheritance: SinghBurger / KingBurger -> MealFactory -->
+<path d="M360,740 Q510,700 640,655" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M633.2,652.4 L650.6,652.9 L642.9,636.3 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<path d="M1140,740 Q990,700 858,655" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M857.4,636.4 L849.7,652.9 L867.1,652.5 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Burger (abstract) -->
+<g>
+<path d="M160,50 L500,50 L500,190 L160,190 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M161.5,51.5 L501.5,51 L501,191 L159,190.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="330" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="330" y="96" font-size="20" text-anchor="middle" fill="white">Burger</text>
+<path d="M172,118 Q330,116 488,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="180" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ prepare() = 0</text>
+<text x="180" y="167" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">Product family A</text>
+</g>
+
+<!-- GarlicBread (abstract) -->
+<g>
+<path d="M900,50 L1240,50 L1240,190 L900,190 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M901.5,51.5 L1241.5,51 L1241,191 L899,190.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1070" y="72" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract&#187;</text>
+<text x="1070" y="96" font-size="20" text-anchor="middle" fill="white">GarlicBread</text>
+<path d="M912,118 Q1070,116 1228,119" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="920" y="145" font-size="15" text-anchor="start" fill="white" opacity="0.9">+ prepare() = 0</text>
+<text x="920" y="167" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">Product family B</text>
+</g>
+
+<!-- SinghBurgers (concrete) -->
+<g>
+<path d="M100,280 L360,280 L360,390 L100,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M101.5,281.5 L361.5,281 L361,391 L99,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="230" y="310" font-size="16" text-anchor="middle" fill="white">SinghBurgers</text>
+<path d="M110,330 Q230,328 350,331" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="118" y="352" font-size="12" text-anchor="start" fill="white" opacity="0.9">Basic / Standard /</text>
+<text x="118" y="371" font-size="12" text-anchor="start" fill="white" opacity="0.9">PremiumBurger</text>
+</g>
+
+<!-- KingBurgers (concrete) -->
+<g>
+<path d="M440,280 L700,280 L700,390 L440,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M441.5,281.5 L701.5,281 L701,391 L439,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="570" y="310" font-size="16" text-anchor="middle" fill="white">KingBurgers</text>
+<path d="M450,330 Q570,328 690,331" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="458" y="352" font-size="12" text-anchor="start" fill="white" opacity="0.9">Basic / Standard /</text>
+<text x="458" y="371" font-size="12" text-anchor="start" fill="white" opacity="0.9">PremiumWheatBurger</text>
+</g>
+
+<!-- SinghGarlicBreads (concrete) -->
+<g>
+<path d="M840,280 L1100,280 L1100,390 L840,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M841.5,281.5 L1101.5,281 L1101,391 L839,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="970" y="310" font-size="15" text-anchor="middle" fill="white">SinghGarlicBreads</text>
+<path d="M850,330 Q970,328 1090,331" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="858" y="352" font-size="12" text-anchor="start" fill="white" opacity="0.9">Basic / Cheese</text>
+<text x="858" y="371" font-size="12" text-anchor="start" fill="white" opacity="0.9">GarlicBread</text>
+</g>
+
+<!-- KingGarlicBreads (concrete) -->
+<g>
+<path d="M1180,280 L1440,280 L1440,390 L1180,390 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M1181.5,281.5 L1441.5,281 L1441,391 L1179,390.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1310" y="310" font-size="15" text-anchor="middle" fill="white">KingGarlicBreads</text>
+<path d="M1190,330 Q1310,328 1430,331" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="1198" y="352" font-size="12" text-anchor="start" fill="white" opacity="0.9">Basic / Cheese</text>
+<text x="1198" y="371" font-size="12" text-anchor="start" fill="white" opacity="0.9">WheatGarlicBread</text>
+</g>
+
+<!-- MealFactory (abstract factory) -->
+<g>
+<path d="M580,480 L920,480 L920,650 L580,650 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M581.5,481.5 L921.5,481 L921,651 L579,650.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="750" y="502" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;abstract factory&#187;</text>
+<text x="750" y="526" font-size="20" text-anchor="middle" fill="white">MealFactory</text>
+<path d="M592,548 Q750,546 908,549" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="600" y="574" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ createBurger(type)</text>
+<text x="600" y="595" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;: Burger* = 0</text>
+<text x="600" y="618" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ createGarlicBread(type)</text>
+<text x="600" y="639" font-size="14" text-anchor="start" fill="white" opacity="0.9">&#160;&#160;&#160;&#160;: GarlicBread* = 0</text>
+</g>
+
+<!-- SinghBurger (concrete factory) -->
+<g>
+<path d="M200,740 L520,740 L520,860 L200,860 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M201.5,741.5 L521.5,741 L521,861 L199,860.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="360" y="770" font-size="18" text-anchor="middle" fill="white">SinghBurger</text>
+<path d="M210,790 Q360,788 510,791" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="218" y="814" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createBurger(type): Burger*</text>
+<text x="218" y="833" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createGarlicBread(type): GarlicBread*</text>
+<text x="218" y="852" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">creates: SinghBurgers, SinghGarlicBreads</text>
+</g>
+
+<!-- KingBurger (concrete factory) -->
+<g>
+<path d="M980,740 L1300,740 L1300,860 L980,860 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M981.5,741.5 L1301.5,741 L1301,861 L979,860.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1140" y="770" font-size="18" text-anchor="middle" fill="white">KingBurger</text>
+<path d="M990,790 Q1140,788 1290,791" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="998" y="814" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createBurger(type): Burger*</text>
+<text x="998" y="833" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ createGarlicBread(type): GarlicBread*</text>
+<text x="998" y="852" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">creates: KingBurgers, KingGarlicBreads</text>
+</g>
+
+</svg>
