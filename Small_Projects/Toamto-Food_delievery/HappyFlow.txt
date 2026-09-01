@@ -1,0 +1,81 @@
+ONLINE FOOD ORDERING SYSTEM — HAPPY FLOW
+
+1. APP STARTUP
+   main() creates a TomatoApp (the Facade).
+   -> TomatoApp::TomatoApp() calls initializeRestaurants()
+      -> Creates 3 Restaurant objects (Bikaner/Delhi, Haldiram/Kolkata,
+         Saravana Bhavan/Chennai), each populated with MenuItems via
+         Restaurant::addMenuItem().
+      -> Registers each Restaurant with RestaurantManager (a Singleton)
+         via RestaurantManager::addRestaurant().
+
+2. USER ARRIVES
+   main() creates a User (id=101, "Aditya", "Delhi").
+   -> User::User() auto-assigns a unique UserId and allocates its own Cart.
+
+3. SEARCH RESTAURANTS BY LOCATION
+   main() calls TomatoApp::searchRestaurants("Delhi")
+   -> delegates to RestaurantManager::getInstance()->searchByLocation("Delhi")
+   -> RestaurantManager does a case-insensitive match on Restaurant::getLocation()
+   -> Returns matching restaurants (Bikaner, in this case).
+
+4. SELECT A RESTAURANT
+   main() calls TomatoApp::selectRestaurant(user, restaurant)
+   -> Fetches user->getCart() and calls Cart::setRestaurant(restaurant).
+   -> From this point the cart is "bound" to that restaurant.
+
+5. ADD ITEMS TO CART
+   main() calls TomatoApp::addToCart(user, "P1") and ("P2")
+   -> Reads the selected restaurant's menu via Restaurant::getMenu()
+   -> Finds the MenuItem whose code matches, and calls Cart::addItem()
+   -> Cart::addItem() refuses to add items if no restaurant is set.
+
+6. VIEW CART
+   main() calls TomatoApp::printUserCart(user)
+   -> Iterates Cart::getItems() and prints each item + Cart::getTotalCost().
+
+7. CHECKOUT (place the order)
+   main() calls TomatoApp::checkoutNow(user, "Delivery", new UpiPaymentStrategy(...))
+   -> TomatoApp::checkout() gathers the cart's restaurant, items, and total
+   -> Delegates order CREATION to an OrderFactory (Factory Method pattern):
+        * checkoutNow()      -> uses NowOrderFactory      (order time = now)
+        * checkoutScheduled()-> uses ScheduledOrderFactory (order time = given time)
+   -> The factory decides Delivery vs Pickup:
+        * "Delivery" -> builds a DeliveryOrder, stamps user's address
+        * "Pickup"   -> builds a PickupOrder, stamps restaurant's address
+   -> The factory fills in user, restaurant, items, payment strategy,
+      scheduled time, and total, then returns the Order.
+   -> TomatoApp::checkout() registers the new Order with
+      OrderManager (a Singleton) via OrderManager::addOrder().
+
+8. PAY FOR THE ORDER
+   main() calls TomatoApp::payForOrder(user, order)
+   -> Order::processPayment() runs the chosen PaymentStrategy
+      (e.g. UpiPaymentStrategy::pay()), a Strategy pattern.
+   -> On success:
+        * NotificationService::notify(order) prints an order confirmation
+          (order id, customer, restaurant, items, total, schedule).
+        * The user's Cart is cleared via Cart::clear() so it's ready
+          for a new order.
+
+9. CLEANUP
+   main() deletes the TomatoApp and User objects.
+
+
+DESIGN PATTERNS USED IN THIS HAPPY FLOW
+- Facade      : TomatoApp gives client code (main.cpp) one simple entry point.
+- Singleton   : RestaurantManager and OrderManager each have exactly one instance.
+- Factory Method: OrderFactory / NowOrderFactory / ScheduledOrderFactory decide
+                  HOW and WHEN an Order (Delivery vs Pickup) gets built.
+- Strategy    : PaymentStrategy lets payment method (UPI, Credit Card, ...)
+                vary independently of Order.
+
+
+ALTERNATE HAPPY PATHS (not in main.cpp, but supported by the code)
+- Pickup instead of Delivery:
+    checkoutNow(user, "Pickup", paymentStrategy)
+- Scheduled order instead of immediate:
+    checkoutScheduled(user, "Delivery", paymentStrategy, "9:00 PM")
+    checkoutScheduled(user, "Pickup",   paymentStrategy, "9:00 PM")
+- Credit card instead of UPI:
+    new CreditCardPaymentStrategy("4111111111111234")
