@@ -1,0 +1,73 @@
+<svg width="1400" height="820" viewBox="0 0 1400 820" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1400" height="820" fill="black"/>
+<style>text { font-family: "Comic Neue","Segoe Print","Bradley Hand","Comic Sans MS",cursive,sans-serif; fill: white; }</style>
+<text x="40" y="800" font-size="15" text-anchor="start" fill="white" opacity="0.5" font-style="italic">Observer Design Pattern (generic / GoF) -- UML Class Diagram</text>
+
+<!-- Aggregation association: Subject o-- Observer -->
+<path d="M560,150 L900,150" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M560,150 L578,140 L596,150 L578,160 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<text x="640" y="138" font-size="13" text-anchor="start" fill="white" opacity="0.85">observers</text>
+<text x="860" y="138" font-size="13" text-anchor="middle" fill="white" opacity="0.85">*</text>
+
+<!-- Inheritance: ConcreteSubject -> Subject -->
+<path d="M355,460 Q355,355 355,258" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M346.5,257 L355,240 L363.5,257 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Inheritance: ConcreteObserver -> Observer -->
+<path d="M1100,460 Q1100,340 1100,222" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M1091.5,221 L1100,204 L1108.5,221 Z" fill="black" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+
+<!-- Dependency: ConcreteObserver ..> ConcreteSubject (pull-model getState) -->
+<path d="M900,540 Q730,520 562,530" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6,5" opacity="0.8"/>
+<path d="M563,522 L546,530 L563,538 Z" fill="black" stroke="white" stroke-width="1.5" stroke-linejoin="round" opacity="0.8"/>
+<text x="700" y="512" font-size="12" text-anchor="middle" fill="white" opacity="0.6" font-style="italic">uses (pull model)</text>
+
+<!-- Subject (interface) -->
+<g>
+<path d="M150,60 L560,60 L560,250 L150,250 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M151.5,61.5 L561.5,61 L561,251 L149,250.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="355" y="84" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;interface&#187;</text>
+<text x="355" y="110" font-size="20" text-anchor="middle" fill="white">Subject</text>
+<path d="M162,128 Q355,126 548,129" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="170" y="153" font-size="14" text-anchor="start" fill="white" opacity="0.9"># observers : list&lt;Observer*&gt;</text>
+<text x="170" y="176" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ attach(Observer*) = 0</text>
+<text x="170" y="198" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ detach(Observer*) = 0</text>
+<text x="170" y="220" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ notify() = 0</text>
+</g>
+
+<!-- Observer (interface) -->
+<g>
+<path d="M900,60 L1300,60 L1300,220 L900,220 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M901.5,61.5 L1301.5,61 L1301,221 L899,220.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1100" y="84" font-size="13" text-anchor="middle" fill="white" opacity="0.75" font-style="italic">&#171;interface&#187;</text>
+<text x="1100" y="110" font-size="20" text-anchor="middle" fill="white">Observer</text>
+<path d="M912,128 Q1100,126 1288,129" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="920" y="153" font-size="14" text-anchor="start" fill="white" opacity="0.9">+ update() = 0</text>
+<text x="920" y="176" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">notified by Subject</text>
+</g>
+
+<!-- ConcreteSubject -->
+<g>
+<path d="M150,460 L560,460 L560,650 L150,650 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M151.5,461.5 L561.5,461 L561,651 L149,650.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="355" y="490" font-size="18" text-anchor="middle" fill="white">ConcreteSubject</text>
+<path d="M162,510 Q355,508 548,511" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="170" y="535" font-size="13" text-anchor="start" fill="white" opacity="0.9">- state</text>
+<text x="170" y="557" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ attach(Observer*)</text>
+<text x="170" y="577" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ detach(Observer*)</text>
+<text x="170" y="597" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ notify()</text>
+<text x="170" y="617" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ getState() / setState()</text>
+</g>
+
+<!-- ConcreteObserver -->
+<g>
+<path d="M900,460 L1300,460 L1300,620 L900,620 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="1.0"/>
+<path d="M901.5,461.5 L1301.5,461 L1301,621 L899,620.5 Z" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+<text x="1100" y="490" font-size="18" text-anchor="middle" fill="white">ConcreteObserver</text>
+<path d="M912,510 Q1100,508 1288,511" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<text x="920" y="535" font-size="13" text-anchor="start" fill="white" opacity="0.9">- subject : ConcreteSubject*</text>
+<text x="920" y="557" font-size="13" text-anchor="start" fill="white" opacity="0.9">+ update()</text>
+<text x="920" y="580" font-size="12" text-anchor="start" fill="white" opacity="0.6" font-style="italic">reacts to subject's change</text>
+</g>
+
+</svg>
